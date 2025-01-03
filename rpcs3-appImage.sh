@@ -18,7 +18,7 @@ rp_module_flags="!all x86"
 
 function install_bin_rpcs3-appImage() {
     mkdir -p "$md_inst/bin"
-    wget https://github.com/RPCS3/rpcs3-binaries-linux-arm64/releases/download/build-ff0249d662fcedee602c9206e73b5feb91f164c1/rpcs3-v0.0.34-17222-ff0249d6_linux_aarch64.AppImage -O "$md_inst/bin/rpcs3.AppImage" -O "$md_inst/bin/rpcs3.AppImage"
+    wget https://github.com/RPCS3/rpcs3-binaries-linux-arm64/releases/download/build-ff0249d662fcedee602c9206e73b5feb91f164c1/rpcs3-v0.0.34-17222-ff0249d6_linux_aarch64.AppImage -O "$md_inst/bin/rpcs3.AppImage"
     chmod +x "$md_inst/bin/rpcs3.AppImage"
 }
 
