@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-rp_module_id="rpcs3-appImage"
+rp_module_id="rpcs3"
 rp_module_desc="PS3 emulator RPCS3"
 rp_module_help="ROM Extensions: .ps3\n\nCopy your .PS3 game folders to $romdir/ps3\n\nDon't forget to run system firmware update first!"
 rp_module_licence="GPL2 https://raw.githubusercontent.com/RPCS3/rpcs3/master/LICENSE"
@@ -50,9 +50,9 @@ function install_bin_rpcs3() {
 function configure_rpcs3() {
     echo "Inizio configurazione RPCS3"
     mkRomDir "ps3"
-    addEmulator 0 "$md_id" "ps3" "$md_inst/bin/rpcs3.AppImage %ROM%/PS3_GAME/USRDIR/EBOOT.BIN"
-    addEmulator 1 "$md_id-nogui" "ps3" "$md_inst/bin/rpcs3.AppImage --no-gui %ROM%/PS3_GAME/USRDIR/EBOOT.BIN"
-    addEmulator 2 "$md_id-guionly" "ps3" "$md_inst/bin/rpcs3.AppImage"
+    addEmulator 0 "$md_id" "ps3" "XINIT-WM:$md_inst/bin/rpcs3.AppImage %ROM%/PS3_GAME/USRDIR/EBOOT.BIN"
+    addEmulator 1 "$md_id-nogui" "ps3" "XINIT-WM:$md_inst/bin/rpcs3.AppImage --no-gui %ROM%/PS3_GAME/USRDIR/EBOOT.BIN"
+    addEmulator 2 "$md_id-guionly" "ps3" "XINIT-WM:$md_inst/bin/rpcs3.AppImage"
     addSystem "ps3"
     echo "Configurazione completata"
 }
