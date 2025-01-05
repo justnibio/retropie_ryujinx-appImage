@@ -26,5 +26,6 @@ function configure_rpcs3-appImage() {
     mkRomDir "ps3"
     addEmulator 0 "$md_id" "ps3" "$md_inst/bin/rpcs3.AppImage %ROM%/PS3_GAME/USRDIR/EBOOT.BIN"
     addEmulator 1 "$md_id-nogui" "ps3" "$md_inst/bin/rpcs3.AppImage --no-gui %ROM%/PS3_GAME/USRDIR/EBOOT.BIN"
+    addEmulator 2 "$md_id-guionly" "ps3" "$md_inst/bin/rpcs3.AppImage"
     addSystem "ps3"
 }
