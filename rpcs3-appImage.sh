@@ -36,7 +36,7 @@ function download_latest_rpcs3() {
 }
 
 
-function install_bin_rpcs3-appImage() {
+function install_bin_rpcs3() {
     echo "Inizio installazione RPCS3"
     mkdir -p "$md_inst/bin"
 
@@ -47,7 +47,7 @@ function install_bin_rpcs3-appImage() {
     echo "Installazione completata"
 }
 
-function configure_rpcs3-appImage() {
+function configure_rpcs3() {
     echo "Inizio configurazione RPCS3"
     mkRomDir "ps3"
     addEmulator 0 "$md_id" "ps3" "$md_inst/bin/rpcs3.AppImage %ROM%/PS3_GAME/USRDIR/EBOOT.BIN"
