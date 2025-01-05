@@ -25,7 +25,7 @@ function download_latest_rpcs3() {
     echo "URL del file AppImage: $appimage_url"
 
     echo "Download del file AppImage in corso..."
-    wget --content-disposition "$appimage_url" -O rpcs3.AppImage
+    wget --content-disposition "$appimage_url" -O "$md_inst/bin/rpcs3.AppImage"
 
     if [[ $? -ne 0 ]]; then
         echo "Errore durante il download del file AppImage."
