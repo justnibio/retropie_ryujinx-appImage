@@ -1,4 +1,4 @@
-# RPCS3 Setup for Retropie
+# Ryujinx Setup for Retropie
 
 This will add an entry on [Retropie-Setup](https://github.com/RetroPie/RetroPie-Setup) for [Ryujinx emulator](https://ryujinx-emulator.com/) running on a ARM64 (aka Raspberry) machine.
 
